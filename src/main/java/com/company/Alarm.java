@@ -1,5 +1,4 @@
-package main.java.com.company;
-
+package com.company;
 
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
@@ -14,6 +13,7 @@ public class Alarm {
     AlarmAudio audio = new AlarmAudio();
 
     public LocalTime inputAlarmTime() {
+
 
         Scanner scanner = new Scanner(System.in);
 

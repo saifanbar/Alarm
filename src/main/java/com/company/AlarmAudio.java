@@ -1,18 +1,18 @@
-package main.java.com.company;
+package com.company;
 
 import javax.sound.sampled.*;
 import java.io.File;
 import java.io.IOException;
 
-public class AlarmAudio implements LineListener {
+public class AlarmAudio implements LineListener{
 
     boolean playCompleted;
 
-    public void setAlarmOff(String audioFilePath) {
+    public void setAlarmOff(String audioFilePath){
 
         File audioFile = new File(audioFilePath);
 
-        try {
+        try{
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(audioFile);
 
             AudioFormat format = audioStream.getFormat();
@@ -27,7 +27,7 @@ public class AlarmAudio implements LineListener {
             audioClip.start();
 
 
-            while (!playCompleted) {
+            while(!playCompleted){
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException ex) {
@@ -51,7 +51,7 @@ public class AlarmAudio implements LineListener {
 
     }
 
-    @Override
+
     public void update(LineEvent event) {
         LineEvent.Type type = event.getType();
 
