@@ -56,7 +56,7 @@ public class Alarm {
             try {
                 Thread.sleep(1000);
                 timeToWakeUp = getLocalTime().equals(wakeupTime);
-                System.out.println(timeToWakeUp);
+                System.out.println(LocalTime.now());
                 if (timeToWakeUp) {
                     System.out.println("Time to wake up!!");
                     break;
@@ -66,7 +66,7 @@ public class Alarm {
                 ex.printStackTrace();
             }
         }
-        audio.setAlarmOff("C:\\Users\\Alien\\Downloads\\analog-watch-alarm_daniel-simion.wav");
+        audio.setAlarmOff("C:\\Users\\SA20018601\\Downloads\\BOMB_SIREN-BOMB_SIREN.wav");
 
 
     }

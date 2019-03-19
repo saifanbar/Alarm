@@ -7,6 +7,7 @@ import java.io.IOException;
 public class AlarmAudio implements LineListener{
 
     boolean playCompleted;
+    Clip audioClip;
 
     public void setAlarmOff(String audioFilePath){
 
@@ -19,12 +20,13 @@ public class AlarmAudio implements LineListener{
 
             DataLine.Info info = new DataLine.Info(Clip.class, format);
 
-            Clip audioClip = (Clip) AudioSystem.getLine(info);
+            audioClip = (Clip) AudioSystem.getLine(info);
 
             audioClip.addLineListener(this);
 
             audioClip.open(audioStream);
             audioClip.start();
+
 
 
             while(!playCompleted){
@@ -62,5 +64,13 @@ public class AlarmAudio implements LineListener{
             playCompleted = true;
             System.out.println("Playback completed.");
         }
+    }
+
+    public void snooze(){
+
+        audioClip.stop();
+        audioClip.close();
+
+
     }
 }

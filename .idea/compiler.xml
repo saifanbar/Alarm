@@ -9,8 +9,5 @@
         <module name="AlarmApp" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="AlarmApp" target="8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
