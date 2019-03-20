@@ -10,29 +10,13 @@ public class Main {
     public static void main(String[] args) throws UnsupportedAudioFileException, IOException, LineUnavailableException, InterruptedException {
         // write your code here
 
-            Scanner scanner = new Scanner(System.in);
-            AlarmSoundController audioPlayer = new AlarmSoundController();
+        Alarm objAlarm = new Alarm();
 
-            String input = scanner.nextLine();
+        //AlarmSoundController soundController = new AlarmSoundController();
 
-            audioPlayer.play();
-            System.out.println("type pause to pause");
-            if(input == "pause"){
+        //soundController.play();
 
-                audioPlayer.pause();
-                System.out.println("User has paused");
-            }
-
-
-
-
-
-
-        //objAlarmSoundController.resetAudioStream();
-
-
-
-        //objAlarm.runAlarm(objAlarm.inputAlarmTime());
+        objAlarm.runAlarm(objAlarm.inputAlarmTime());
 
 
     }

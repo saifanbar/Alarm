@@ -1,5 +1,8 @@
 package com.company;
 
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
+import java.io.IOException;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
@@ -11,6 +14,11 @@ public class Alarm {
 
     Pattern pattern;
     AlarmAudio audio = new AlarmAudio();
+    AlarmSoundController alarmSoundController;
+
+    public Alarm() throws InterruptedException, UnsupportedAudioFileException, LineUnavailableException, IOException {
+
+    }
 
     public LocalTime inputAlarmTime() {
 
@@ -44,9 +52,12 @@ public class Alarm {
         return timeLabel;
     }
 
-    public void runAlarm(LocalTime wakeupTime) {
+    public void runAlarm(LocalTime wakeupTime) throws UnsupportedAudioFileException, IOException, LineUnavailableException {
 
-        Boolean timeToWakeUp = getLocalTime().equals(wakeupTime);
+
+
+        boolean timeToWakeUp = getLocalTime().equals(wakeupTime);
+        boolean switcher = false;
 
         System.out.println("The local time is: " + getLocalTime());
         System.out.println("The wake up time is: " + wakeupTime);
@@ -59,14 +70,20 @@ public class Alarm {
                 System.out.println(LocalTime.now());
                 if (timeToWakeUp) {
                     System.out.println("Time to wake up!!");
-                    break;
+
+
+                    AlarmSoundController soundController = new AlarmSoundController();
+                    soundController.play();
+                    //audio.setAlarmOff("C:\\Users\\SA20018601\\Downloads\\BOMB_SIREN-BOMB_SIREN.wav");
+
+
                 }
 
             } catch (InterruptedException ex) {
                 ex.printStackTrace();
             }
         }
-        audio.setAlarmOff("C:\\Users\\SA20018601\\Downloads\\BOMB_SIREN-BOMB_SIREN.wav");
+        //audio.setAlarmOff("C:\\Users\\SA20018601\\Downloads\\BOMB_SIREN-BOMB_SIREN.wav");
 
 
     }
