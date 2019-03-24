@@ -1,4 +1,4 @@
-package main.java.com.company;
+package com.company;
 
 import com.google.gson.*;
 //import com.google.gson.stream.JsonReader;
@@ -16,7 +16,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) throws UnsupportedAudioFileException, IOException, LineUnavailableException, InterruptedException {
-       /*
+
         // write your code here
         Alarm objAlarm = new Alarm();
         AlarmReadWrite objAlarmReadWrite = new AlarmReadWrite();
@@ -44,7 +44,7 @@ public class Main {
         //soundController.play();
 
         //objAlarm.runAlarm(objAlarm.inputAlarmTime());
-*/
+
         File jsonInputFile = new File("C:\\Users\\Alien\\Desktop\\Alarm Folder\\Alarm_Times.txt");
         InputStream is;
         try {
@@ -55,9 +55,9 @@ public class Main {
             JsonObject alarmObj = reader.readObject();
             reader.close();
             // read string data
-            System.out.println("Hour: " + alarmObj.getString("hour"));
+            System.out.println("Hour: " + alarmObj.getInt("hour"));
             // read integer data
-            System.out.println("Minute: " + alarmObj.getString("minute"));
+            System.out.println("Minute: " + alarmObj.getInt("minute"));
 
         } catch (FileNotFoundException e) {
             // TODO Auto-generated catch block

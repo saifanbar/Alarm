@@ -1,4 +1,4 @@
-package main.java.com.company;
+package com.company;
 
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
