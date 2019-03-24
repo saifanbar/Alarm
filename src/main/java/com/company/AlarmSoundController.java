@@ -1,11 +1,10 @@
-package com.company;
+package main.java.com.company;
+
+import javax.sound.sampled.*;
 import java.io.File;
 import java.io.IOException;
 import java.time.LocalTime;
 import java.util.Scanner;
-
-
-import javax.sound.sampled.*;
 
 import static java.time.temporal.ChronoUnit.MINUTES;
 
@@ -26,7 +25,7 @@ import static java.time.temporal.ChronoUnit.MINUTES;
 
  */
 
-public class AlarmSoundController implements LineListener{
+public class AlarmSoundController implements LineListener {
     // to store current position
     Long currentFrame;
     Clip clip;
@@ -41,12 +40,12 @@ public class AlarmSoundController implements LineListener{
     AudioInputStream audioInputStream;
 
     // constructor to initialize streams and clip
-    File audioFile = new File("C:\\Users\\SA20018601\\Downloads\\analog-watch-alarm_daniel-simion.wav");
+    File audioFile = new File("\\C:\\Users\\Alien\\Downloads\\analog-watch-alarm_daniel-simion.wav");
 
     //static String filePath = "C:\\Users\\SA20018601\\Downloads\\analog-watch-alarm_daniel-simion.wav";
 
     public AlarmSoundController() throws UnsupportedAudioFileException,
-            IOException, LineUnavailableException, InterruptedException{
+            IOException, LineUnavailableException, InterruptedException {
 
 
         // create AudioInputStream object
@@ -78,11 +77,11 @@ public class AlarmSoundController implements LineListener{
         clip.start();
         Scanner scanner = new Scanner(System.in);
         //start the clip
-        while(!playCompleted) {
+        while (!playCompleted) {
             System.out.println("Would you like to snooze for 10 minutes? 'Y/N'");
             String snoozeAnswer = scanner.nextLine();
             gotoChoice(snoozeAnswer);
-            if(snoozeAnswer == "N"){
+            if (snoozeAnswer == "N") {
                 break;
             }
 
@@ -93,73 +92,15 @@ public class AlarmSoundController implements LineListener{
 
     }
 
-    // Method to pause the audio
-    public void pause()
-    {
-
-        this.currentFrame =
-                this.clip.getMicrosecondPosition();
-        clip.stop();
-        status = "paused";
-    }
-
-    // Method to resume the audio
-    public void resumeAudio() throws UnsupportedAudioFileException,
-            IOException, LineUnavailableException, InterruptedException {
-
-        clip.close();
-        resetAudioStream();
-        clip.setMicrosecondPosition(currentFrame);
-        this.play();
-    }
-
-    // Method to restart the audio
-    public void restart() throws IOException, LineUnavailableException,
-            UnsupportedAudioFileException, InterruptedException {
-        clip.stop();
-        clip.close();
-        resetAudioStream();
-        currentFrame = 0L;
-        clip.setMicrosecondPosition(0);
-        this.play();
-    }
 
     // Method to stop the audio
-    public void stop(){
+    public void stop() {
 
         currentFrame = 0L;
         clip.stop();
         clip.close();
     }
 
-    // Method to jump over a specific part
-    public void jump(long c) throws UnsupportedAudioFileException, IOException,
-            LineUnavailableException, InterruptedException {
-        if (c > 0 && c < clip.getMicrosecondLength())
-        {
-            clip.stop();
-            clip.close();
-            resetAudioStream();
-            currentFrame = c;
-            clip.setMicrosecondPosition(c);
-            this.play();
-        }
-    }
-
-    // Method to reset audio stream
-    public void resetAudioStream() throws UnsupportedAudioFileException, IOException,
-            LineUnavailableException
-    {
-        audioInputStream = AudioSystem.getAudioInputStream(
-                audioFile);
-        clip.open(audioInputStream);
-        clip.loop(Clip.LOOP_CONTINUOUSLY);
-    }
-
-    //if user calls snooze
-    // 1) stop the alarm
-    // 2) add the snooze timer to the local time
-    // 3) play sound after time is up
 
     public void snooze() throws UnsupportedAudioFileException, IOException, LineUnavailableException, InterruptedException {
 
@@ -173,19 +114,19 @@ public class AlarmSoundController implements LineListener{
         stop();
         System.out.println("The current time is: " + currentTime);
         System.out.println("The snooze time is: " + snoozePlusCurrentTime);
-        while(!timeToWakeUp){
+        while (!timeToWakeUp) {
             try {
                 Thread.sleep(1000);
                 timeToWakeUp = alarm.getLocalTime().equals(snoozePlusCurrentTime);
 
                 System.out.println(LocalTime.now());
-                if(timeToWakeUp){
+                if (timeToWakeUp) {
                     System.out.println("Snooze time is up, playing alarm!!");
                     AlarmSoundController soundController = new AlarmSoundController();
                     soundController.play();
 
                 }
-            } catch (Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
@@ -193,7 +134,7 @@ public class AlarmSoundController implements LineListener{
     }
 
     private void gotoChoice(String answer) throws UnsupportedAudioFileException, IOException, LineUnavailableException, InterruptedException {
-        switch(answer){
+        switch (answer) {
             case "Y":
                 snooze();
                 break;
