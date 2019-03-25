@@ -3,18 +3,18 @@ package com.company;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 import java.io.IOException;
+import java.io.Serializable;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
 
-
-public class Alarm {
+public class Alarm implements Serializable {
 
 
     Pattern pattern;
-    AlarmAudio audio = new AlarmAudio();
+
     AlarmSoundController alarmSoundController;
     LocalTime parsedAlarmTimeString;
 
@@ -41,7 +41,7 @@ public class Alarm {
         return parsedAlarmTimeString;
     }
 
-    public void setParsedAlarmTimeString(LocalTime parsedAlarmTimeString){
+    public void setParsedAlarmTimeString(LocalTime parsedAlarmTimeString) {
         this.parsedAlarmTimeString = parsedAlarmTimeString;
     }
 
@@ -85,14 +85,12 @@ public class Alarm {
                     soundController.play();
 
 
-
                 }
 
             } catch (InterruptedException ex) {
                 ex.printStackTrace();
             }
         }
-
 
 
     }
