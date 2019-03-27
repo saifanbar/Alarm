@@ -11,17 +11,18 @@ import static java.nio.file.Files.walk;
 
 public class AlarmSerialization {
 
-    Alarm alarm = new Alarm();
-
-
     public AlarmSerialization() throws InterruptedException, UnsupportedAudioFileException, LineUnavailableException, IOException {
     }
 
-    LocalTime input = alarm.inputAlarmTime();
+
+    Alarm alarm = new Alarm();
     String filename;
-    String pathName = "C:\\Users\\Alien\\Desktop\\Alarm\\serFiles\\";
+    String pathName = "C:\\Users\\SA20018601\\Desktop\\TempAlarm\\serFiles\\";
+
 
     public void serializeAlarm() {
+        System.out.println(" --- Save alarm time ---\n");
+        LocalTime input = alarm.inputAlarmTime();
         try {
             filename = "alarmTime.ser";
             //Saving of object in a file
@@ -47,13 +48,13 @@ public class AlarmSerialization {
 
     }
 
-    public void deserializeAlarm() throws IOException, ClassNotFoundException {
+    public LocalTime deserializeAlarm() throws IOException, ClassNotFoundException {
         File root = new File(pathName);
         File[] list = root.listFiles();
         int i = 0;
-        if (list == null) return;
+        if (list == null) return null;
 
-        System.out.println("What time would you like to wake up? Press the number corresponding to the time.");
+        System.out.println("\nWhat time would you like to wake up? Press the number corresponding to the time.\n");
 
         for (File f : list) {
 
@@ -76,7 +77,7 @@ public class AlarmSerialization {
         Object object = objectInputStream.readObject();
         objectInputStream.close();
 
-        System.out.println(object);
+        return (LocalTime) object;
 
     }
 }

@@ -19,7 +19,7 @@ public class AlarmSoundController implements LineListener {
     AudioInputStream audioInputStream;
 
     // constructor to initialize streams and clip
-    File audioFile = new File("\\C:\\Users\\Alien\\Downloads\\analog-watch-alarm_daniel-simion.wav");
+    File audioFile = new File("C:\\Users\\SA20018601\\Downloads\\analog-watch-alarm_daniel-simion.wav");
 
     //static String filePath = "C:\\Users\\SA20018601\\Downloads\\analog-watch-alarm_daniel-simion.wav";
 
@@ -28,8 +28,7 @@ public class AlarmSoundController implements LineListener {
 
 
         // create AudioInputStream object
-        audioInputStream =
-                AudioSystem.getAudioInputStream(audioFile);
+        audioInputStream = AudioSystem.getAudioInputStream(audioFile);
 
         System.out.println(audioFile);
 
@@ -41,9 +40,6 @@ public class AlarmSoundController implements LineListener {
 
         clip.addLineListener(this);
 
-        // create clip reference
-        //clip = AudioSystem.getClip();
-
         // open audioInputStream to the clip
         clip.open(audioInputStream);
 
@@ -53,20 +49,22 @@ public class AlarmSoundController implements LineListener {
 
     public void play() throws UnsupportedAudioFileException, IOException, LineUnavailableException, InterruptedException {
 
+
         clip.start();
         Scanner scanner = new Scanner(System.in);
-        //start the clip
         while (!playCompleted) {
             System.out.println("Would you like to snooze for 10 minutes? 'Y/N'");
-            String snoozeAnswer = scanner.nextLine();
-            gotoChoice(snoozeAnswer);
-            if (snoozeAnswer == "N") {
-                break;
+            String snoozeAnswer = scanner.nextLine().toUpperCase();
+            //boolean check = snoozeAnswer.equals("N") || snoozeAnswer.equals("Y");
+
+            while (!snoozeAnswer.equals("N") && !snoozeAnswer.equals("Y")) {
+
+                System.out.println("Please enter 'Y' for yes or 'N' for no. ");
+                snoozeAnswer = scanner.nextLine().toUpperCase();
             }
+            gotoChoice(snoozeAnswer);
 
             scanner.close();
-
-
         }
 
     }

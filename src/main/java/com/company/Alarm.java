@@ -14,8 +14,6 @@ public class Alarm implements Serializable {
 
 
     Pattern pattern;
-
-    AlarmSoundController alarmSoundController;
     LocalTime parsedAlarmTimeString;
 
     public Alarm() throws InterruptedException, UnsupportedAudioFileException, LineUnavailableException, IOException {
