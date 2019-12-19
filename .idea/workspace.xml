@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2e07895-3e50-473c-8eb4-cfdf83bdd819" name="Default Changelist" comment="Working on audio functionality for snooze">
-      <change afterPath="$PROJECT_DIR$/.idea/Alarm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sounds/analog-watch-alarm_daniel-simion.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f2e07895-3e50-473c-8eb4-cfdf83bdd819" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AlarmSerialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/AlarmSerialization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AlarmSoundController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/AlarmSoundController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Init.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Init.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Alarm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Alarm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/AlarmAudio.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/AlarmSerialization.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/AlarmSerialization.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/AlarmSoundController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/AlarmSoundController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Init.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Init.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1553019629249</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Packaged sound in project and fixed save location of times">
+      <created>1576797561763</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576797561763</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -169,7 +164,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Working on audio functionality for snooze" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on audio functionality for snooze" />
+    <MESSAGE value="Packaged sound in project and fixed save location" />
+    <MESSAGE value="Packaged sound in project and fixed save location of times" />
+    <option name="LAST_COMMIT_MESSAGE" value="Packaged sound in project and fixed save location of times" />
   </component>
   <component name="WindowStateProjectService">
     <state x="396" y="96" key="#Main" timestamp="1576789499339">
@@ -184,10 +181,10 @@
       <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state x="569" y="327" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1440.816@0.23.1440.816" timestamp="1576787906210" />
-    <state x="344" y="52" key="CommitChangelistDialog2" timestamp="1576797424586">
+    <state x="344" y="52" key="CommitChangelistDialog2" timestamp="1576797561203">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="344" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1576797424586" />
+    <state x="344" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1576797561203" />
     <state width="1398" height="156" key="GridCell.Tab.0.bottom" timestamp="1576797424623">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
