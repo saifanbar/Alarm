@@ -2,116 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2e07895-3e50-473c-8eb4-cfdf83bdd819" name="Default Changelist" comment="Working on audio functionality for snooze">
+      <change afterPath="$PROJECT_DIR$/.idea/Alarm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sounds/analog-watch-alarm_daniel-simion.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Alarm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Alarm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AlarmSerialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/AlarmSerialization.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AlarmSoundController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/AlarmSoundController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Init.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Init.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Alarm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Alarm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/AlarmAudio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/AlarmSerialization.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/AlarmSerialization.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/AlarmSoundController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/AlarmSoundController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Init.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Init.class" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="353621681">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.2" value="2" />
-          <entry key="project.opened" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="5" />
-          <entry key="xml" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="5" />
-          <entry key="XML" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="4332" />
-          <entry key="txt" value="41" />
-          <entry key="xml" value="12" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="4332" />
-          <entry key="PLAIN_TEXT" value="41" />
-          <entry key="XML" value="12" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Alarm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-577">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/AlarmSoundController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="28" column="58" lean-forward="true" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/AlarmAudio.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -122,105 +30,32 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/AlarmAudio.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/Alarm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/Snooze.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/AlarmSoundController.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1325" />
-    <option name="y" value="-19" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
-  </component>
+  <component name="ProjectId" id="1VDVbUGw9CWveVKXlGm5WnQn5an" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="AlarmApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TempAlarm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AlarmApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TempAlarm" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AlarmApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TempAlarm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AlarmApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TempAlarm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AlarmApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TempAlarm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AlarmApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TempAlarm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AlarmApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TempAlarm" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="playCompleted&#9;PSI&#9;JAVA://com.company.AlarmAudio#playCompleted" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553105863554" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Saves" />
+      <recent name="$PROJECT_DIR$/Sounds" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
-      <module name="AlarmApp" />
+      <module name="Alarm" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.company.*" />
@@ -280,14 +115,26 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Maven.AlarmBuild" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Maven.AlarmBuild" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -310,37 +157,6 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1616" height="876" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16452442" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32884097" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.26954177" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39892185" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.12786885" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32749325" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
-    </layout>
-  </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
       <list>
@@ -351,71 +167,55 @@
       </list>
     </option>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Working on audio functionality for snooze" />
     <option name="LAST_COMMIT_MESSAGE" value="Working on audio functionality for snooze" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/AlarmAudio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Snooze.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Alarm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-577">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/AlarmSoundController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="28" column="58" lean-forward="true" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="396" y="96" key="#Main" timestamp="1576789499339">
+      <screen x="0" y="23" width="1440" height="816" />
+    </state>
+    <state x="396" y="96" key="#Main/0.23.1440.816@0.23.1440.816" timestamp="1576789499339" />
+    <state x="448" y="260" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576791948095">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="448" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1576791948095" />
+    <state x="569" y="327" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1576787906210">
+      <screen x="0" y="23" width="1440" height="816" />
+    </state>
+    <state x="569" y="327" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1440.816@0.23.1440.816" timestamp="1576787906210" />
+    <state x="344" y="52" key="CommitChangelistDialog2" timestamp="1576797424586">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="344" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1576797424586" />
+    <state width="1398" height="156" key="GridCell.Tab.0.bottom" timestamp="1576797424623">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="156" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576797424623" />
+    <state width="1358" height="156" key="GridCell.Tab.0.bottom/0.23.1440.816@0.23.1440.816" timestamp="1576790628312" />
+    <state width="1398" height="156" key="GridCell.Tab.0.center" timestamp="1576797424621">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="156" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576797424621" />
+    <state width="1358" height="156" key="GridCell.Tab.0.center/0.23.1440.816@0.23.1440.816" timestamp="1576790628310" />
+    <state width="1398" height="156" key="GridCell.Tab.0.left" timestamp="1576797424620">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="156" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576797424620" />
+    <state width="1358" height="156" key="GridCell.Tab.0.left/0.23.1440.816@0.23.1440.816" timestamp="1576790628309" />
+    <state width="1398" height="156" key="GridCell.Tab.0.right" timestamp="1576797424622">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="156" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576797424622" />
+    <state width="1358" height="156" key="GridCell.Tab.0.right/0.23.1440.816@0.23.1440.816" timestamp="1576790628311" />
+    <state x="397" y="263" key="com.intellij.ide.util.TipDialog" timestamp="1576787740441">
+      <screen x="0" y="23" width="1440" height="816" />
+    </state>
+    <state x="397" y="263" key="com.intellij.ide.util.TipDialog/0.23.1440.816@0.23.1440.816" timestamp="1576787740441" />
+    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576797330013">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1576797330013" />
   </component>
   <component name="masterDetails">
     <states>

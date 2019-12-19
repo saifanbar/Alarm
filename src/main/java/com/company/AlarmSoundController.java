@@ -19,12 +19,12 @@ public class AlarmSoundController implements LineListener {
     AudioInputStream audioInputStream;
 
     // constructor to initialize streams and clip
-    File audioFile = new File("C:\\Users\\SA20018601\\Downloads\\analog-watch-alarm_daniel-simion.wav");
+    File audioFile = new File("Sounds/analog-watch-alarm_daniel-simion.wav");
 
     //static String filePath = "C:\\Users\\SA20018601\\Downloads\\analog-watch-alarm_daniel-simion.wav";
 
     public AlarmSoundController() throws UnsupportedAudioFileException,
-            IOException, LineUnavailableException, InterruptedException {
+            IOException, LineUnavailableException {
 
 
         // create AudioInputStream object

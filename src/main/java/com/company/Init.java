@@ -1,5 +1,7 @@
 package com.company;
 
+
+
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 import java.io.IOException;
@@ -48,7 +50,7 @@ public class Init {
             init();
         } else if (input == 3) {
 
-            objAlarm.runAlarm(as.deserializeAlarm());
+            objAlarm.runAlarm((LocalTime) as.deserializeAlarm());
         }
     }
 }
