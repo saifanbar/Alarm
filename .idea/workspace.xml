@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f2e07895-3e50-473c-8eb4-cfdf83bdd819" name="Default Changelist" comment="Packaged sound in project and fixed save location of times">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AlarmSoundController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/AlarmSoundController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AlarmSerialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/AlarmSerialization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/AlarmSerialization.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/AlarmSerialization.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/company/AlarmSoundController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/AlarmSoundController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +31,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="playCompleted&#9;PSI&#9;JAVA://com.company.AlarmAudio#playCompleted" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553105863554" />
@@ -190,34 +192,40 @@
       <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state x="569" y="327" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1440.816@0.23.1440.816" timestamp="1576787906210" />
-    <state x="344" y="52" key="CommitChangelistDialog2" timestamp="1576797916204">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="459" y="60" key="CommitChangelistDialog2" timestamp="1577001258795">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="344" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1576797916204" />
-    <state width="1398" height="156" key="GridCell.Tab.0.bottom" timestamp="1576797976611">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="459" y="60" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577001258795" />
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1577001261050">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="156" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576797976611" />
     <state width="1358" height="156" key="GridCell.Tab.0.bottom/0.23.1440.816@0.23.1440.816" timestamp="1576790628312" />
-    <state width="1398" height="156" key="GridCell.Tab.0.center" timestamp="1576797976609">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577001261050" />
+    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1577001261050">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="156" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576797976609" />
     <state width="1358" height="156" key="GridCell.Tab.0.center/0.23.1440.816@0.23.1440.816" timestamp="1576790628310" />
-    <state width="1398" height="156" key="GridCell.Tab.0.left" timestamp="1576797976608">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1877" height="266" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577001261050" />
+    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1577001261050">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="156" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576797976608" />
     <state width="1358" height="156" key="GridCell.Tab.0.left/0.23.1440.816@0.23.1440.816" timestamp="1576790628309" />
-    <state width="1398" height="156" key="GridCell.Tab.0.right" timestamp="1576797976610">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1877" height="266" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577001261050" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1577001261050">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="156" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576797976610" />
     <state width="1358" height="156" key="GridCell.Tab.0.right/0.23.1440.816@0.23.1440.816" timestamp="1576790628311" />
-    <state x="397" y="263" key="com.intellij.ide.util.TipDialog" timestamp="1576787740441">
-      <screen x="0" y="23" width="1440" height="816" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577001261050" />
+    <state x="529" y="306" key="com.intellij.ide.util.TipDialog" timestamp="1577000620328">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="397" y="263" key="com.intellij.ide.util.TipDialog/0.23.1440.816@0.23.1440.816" timestamp="1576787740441" />
+    <state x="529" y="306" key="com.intellij.ide.util.TipDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577000620328" />
     <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576797330013">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

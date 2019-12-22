@@ -28,14 +28,15 @@ public class AlarmSerialization {
 
 
     public void serializeAlarm() {
-        System.out.println(" --- Save alarm time ---\n");
+        System.out.println(" --- Save alarm time ---");
+        System.out.println("Current time: " + alarm.getLocalTime());
         LocalTime input = alarm.inputAlarmTime();
         try {
             filename = "alarmTime.ser";
             //Saving of object in a file
             if (filename.equalsIgnoreCase(filename)) {
                 filename = "alarmTime_" + input.getHour() + input.getMinute() + ".ser";
-                System.out.println(filename);
+
             }
             FileOutputStream file = new FileOutputStream("Saves/" + filename);
             ObjectOutputStream out = new ObjectOutputStream(file);
