@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2e07895-3e50-473c-8eb4-cfdf83bdd819" name="Default Changelist" comment="Packaged sound in project and fixed save location of times">
+    <list default="true" id="f2e07895-3e50-473c-8eb4-cfdf83bdd819" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/notes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/APICalls.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/DynamicAlarm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AlarmSerialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/AlarmSerialization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/AlarmSerialization.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/AlarmSerialization.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/AlarmSoundController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/AlarmSoundController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Alarm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Alarm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,13 +26,16 @@
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1VDVbUGw9CWveVKXlGm5WnQn5an" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="playCompleted&#9;PSI&#9;JAVA://com.company.AlarmAudio#playCompleted" />
@@ -39,6 +44,9 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Saif\IdeaProjects\Alarm" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Saves" />
       <recent name="$PROJECT_DIR$/Sounds" />
@@ -160,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576797656073</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added the current time when saving a time and cleaned up code.">
+      <created>1577001358797</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577001358797</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -174,16 +189,22 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Working on audio functionality for snooze" />
     <MESSAGE value="Packaged sound in project and fixed save location" />
     <MESSAGE value="Packaged sound in project and fixed save location of times" />
-    <option name="LAST_COMMIT_MESSAGE" value="Packaged sound in project and fixed save location of times" />
+    <MESSAGE value="Added the current time when saving a time and cleaned up code." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the current time when saving a time and cleaned up code." />
   </component>
   <component name="WindowStateProjectService">
     <state x="396" y="96" key="#Main" timestamp="1576789499339">
       <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state x="396" y="96" key="#Main/0.23.1440.816@0.23.1440.816" timestamp="1576789499339" />
+    <state x="690" y="276" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1577100302982">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="276" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577100302982" />
     <state x="448" y="260" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576791948095">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -192,44 +213,60 @@
       <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state x="569" y="327" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1440.816@0.23.1440.816" timestamp="1576787906210" />
-    <state x="459" y="60" key="CommitChangelistDialog2" timestamp="1577001258795">
+    <state x="459" y="60" key="CommitChangelistDialog2" timestamp="1577104234144">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="344" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1576797916204" />
-    <state x="459" y="60" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577001258795" />
-    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1577001261050">
+    <state x="459" y="60" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577104234144" />
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1577004107598">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="276" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577004107598" />
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1577004124528">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="156" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576797976611" />
     <state width="1358" height="156" key="GridCell.Tab.0.bottom/0.23.1440.816@0.23.1440.816" timestamp="1576790628312" />
-    <state width="1877" height="266" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577001261050" />
-    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1577001261050">
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577004124528" />
+    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1577004124528">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="156" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576797976609" />
     <state width="1358" height="156" key="GridCell.Tab.0.center/0.23.1440.816@0.23.1440.816" timestamp="1576790628310" />
-    <state width="1877" height="266" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577001261050" />
-    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1577001261050">
+    <state width="1877" height="266" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577004124528" />
+    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1577004124528">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="156" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576797976608" />
     <state width="1358" height="156" key="GridCell.Tab.0.left/0.23.1440.816@0.23.1440.816" timestamp="1576790628309" />
-    <state width="1877" height="266" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577001261050" />
-    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1577001261050">
+    <state width="1877" height="266" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577004124528" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1577004124528">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="156" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576797976610" />
     <state width="1358" height="156" key="GridCell.Tab.0.right/0.23.1440.816@0.23.1440.816" timestamp="1576790628311" />
-    <state width="1877" height="266" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577001261050" />
-    <state x="529" y="306" key="com.intellij.ide.util.TipDialog" timestamp="1577000620328">
+    <state width="1877" height="266" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577004124528" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1577001366857">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577001366857" />
+    <state x="529" y="306" key="com.intellij.ide.util.TipDialog" timestamp="1577004139886">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="397" y="263" key="com.intellij.ide.util.TipDialog/0.23.1440.816@0.23.1440.816" timestamp="1576787740441" />
-    <state x="529" y="306" key="com.intellij.ide.util.TipDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577000620328" />
+    <state x="529" y="306" key="com.intellij.ide.util.TipDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577004139886" />
     <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576797330013">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1576797330013" />
+    <state x="690" y="276" width="540" height="496" key="extract.method.dialog" timestamp="1577100741842">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="276" width="540" height="496" key="extract.method.dialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577100741842" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1577101652808">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577101652808" />
   </component>
   <component name="masterDetails">
     <states>
