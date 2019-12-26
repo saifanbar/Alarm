@@ -2,6 +2,8 @@ package com.company;
 
 
 
+import com.mashape.unirest.http.exceptions.UnirestException;
+
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 import java.io.IOException;
@@ -10,10 +12,15 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Init {
-    public void init() throws InterruptedException, UnsupportedAudioFileException, LineUnavailableException, IOException, ClassNotFoundException {
+    public void init() throws InterruptedException, UnsupportedAudioFileException, LineUnavailableException, IOException, ClassNotFoundException, UnirestException {
         Alarm objAlarm = new Alarm();
         AlarmSerialization as = new AlarmSerialization();
-        //int input = 0;
+
+        APICalls apiCalls = new APICalls();
+        DynamicAlarm dynamicAlarm = new DynamicAlarm();
+
+        long durationWithoutTraffic = apiCalls.durationWithoutTraffic();
+        long durationWithTraffic = apiCalls.durationWithTraffic();
 
 
         Scanner scanner = new Scanner(System.in);
@@ -23,6 +30,7 @@ public class Init {
         System.out.println(" 1) Enter alarm time.");
         System.out.println(" 2) Save alarm time");
         System.out.println(" 3) Load alarm time.");
+        System.out.println(" 4) Dynamic alarm time.");
         System.out.print(" Enter a number: ");
 
         do {
@@ -32,15 +40,16 @@ public class Init {
                 System.out.println("Please select one of the options by pressing the corresponding number");
                 scanner.nextLine();
             }
-            if(input != 1 && input != 2 && input != 3) {
+            if(input != 1 && input != 2 && input != 3 && input != 4) {
                 System.out.println("Please select one of the options listed below\n");
                 System.out.println(" 1) Enter alarm time.");
                 System.out.println(" 2) Save alarm time");
                 System.out.println(" 3) Load alarm time.");
+                System.out.println(" 4) Dynamic alarm time.");
                 System.out.print(" Enter a number: ");
 
             }
-        }while (input != 1 && input != 2 && input != 3);
+        }while (input != 1 && input != 2 && input != 3 && input != 4);
         if (input == 1) {
             LocalTime localTimeInput = objAlarm.inputAlarmTime();
             objAlarm.setParsedAlarmTimeString(localTimeInput);
@@ -51,6 +60,11 @@ public class Init {
         } else if (input == 3) {
 
             objAlarm.runAlarm((LocalTime) as.deserializeAlarm());
+        } else if (input == 4) {
+            objAlarm.runAlarm(dynamicAlarm.totalTimeCalculation(durationWithoutTraffic,durationWithTraffic));
         }
+
+
+
     }
 }

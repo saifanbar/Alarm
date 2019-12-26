@@ -2,6 +2,8 @@ package com.company;
 
 
 
+import com.mashape.unirest.http.exceptions.UnirestException;
+
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 import java.io.*;
@@ -56,7 +58,7 @@ public class AlarmSerialization {
 
     }
 
-    public Object deserializeAlarm() throws IOException, ClassNotFoundException, InterruptedException, UnsupportedAudioFileException, LineUnavailableException {
+    public Object deserializeAlarm() throws IOException, ClassNotFoundException, InterruptedException, UnsupportedAudioFileException, LineUnavailableException, UnirestException {
         File root = new File(pathName);
         File[] list = root.listFiles();
         int i = 0;

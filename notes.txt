@@ -1,12 +1,12 @@
 Main Objective: Use traffic duration value returned by the google maps api to create a dynamic alarm clock
-   1 - Translate returned value to type that is functional with current code.
-        a) Problem: Figure out a way to subtract type int from type LocalTime (Maybe find a friendlier type to work with)
+   1 - Translate returned value to type that is functional with current code. SOLVED
+        a) Problem: Figure out a way to subtract type int from type LocalTime (Maybe find a friendlier type to work with) SOLVED
    2 - Work on logic to create the dynamic alarm clock
         a) Pseudo code: If "duration in traffic" is greater than "normal drive", subtract the difference and add to the
                             "normal drive" then add to the "get ready time", finally subtract from arrival time to set alarm.
                             ("arrival time" - ("get ready time" + ("normal drive" + ("normal drive" - "duration in traffic")))) = "total time"
                         If "duration in traffic" is less than or equal to "normal drive", add the "normal drive" time to the "get ready time". ("normal drive" + "get ready time") = "total time"
-                        "Total time" is subtracted from the "arrival time". ("arrival time" - "total time")
+                        "Total time" is subtracted from the "arrival time". ("arrival time" - "total time") COMPLETED/SOLVED
 
         b) Variables: normal drive: The normal time it takes to reach a destination when there is no traffic
                       duration in traffic: The time it takes to reach a destination when there is traffic
@@ -14,12 +14,13 @@ Main Objective: Use traffic duration value returned by the google maps api to cr
                       driving duration: The summation of "normal drive" time and the difference between "normal drive" time and "duration in traffic"
                       total time: The summation of "driving duration" and "get ready time".
                       arrival time: the time the user will arrive at the destination
+                      NEED TO RENAME VARIABLES
 
 
 
 Secondary Objectives:
 
-1) Change from hard coded value to user input values (Address). Find an API that does address validation.
+1) Change from hard coded value to user input values (Address/Inputs to user questions). Find an API that does address validation.
 2) Create GUI.
 
 User questions:

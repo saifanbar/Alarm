@@ -1,5 +1,6 @@
 package com.company;
 
+import com.mashape.unirest.http.exceptions.UnirestException;
 import org.json.simple.parser.ParseException;
 
 import javax.sound.sampled.LineUnavailableException;
@@ -12,10 +13,16 @@ import java.util.Scanner;
 public class Main {
 
 
-    public static void main(String[] args) throws UnsupportedAudioFileException, IOException, LineUnavailableException, InterruptedException, ParseException, ClassNotFoundException {
+    public static void main(String[] args) throws UnsupportedAudioFileException, IOException, LineUnavailableException, InterruptedException, ParseException, ClassNotFoundException, UnirestException {
 
         Init init = new Init();
         init.init();
+
+
+
+
+
+
 
         }
 
