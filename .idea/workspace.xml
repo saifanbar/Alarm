@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2e07895-3e50-473c-8eb4-cfdf83bdd819" name="Default Changelist" comment="Added functioning dynamic alarm clock based on live traffic.">
+    <list default="true" id="f2e07895-3e50-473c-8eb4-cfdf83bdd819" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/notes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/APICalls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/APICalls.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AlarmSerialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/AlarmSerialization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/DynamicAlarm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/DynamicAlarm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Init.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Init.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Alarm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Alarm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/AlarmSerialization.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/AlarmSerialization.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Init.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Init.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577104307950</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added functioning dynamic alarm clock based on live traffic.">
+      <created>1577374404275</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1577374404275</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -223,11 +230,11 @@
       <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state x="569" y="327" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1440.816@0.23.1440.816" timestamp="1576787906210" />
-    <state x="459" y="60" key="CommitChangelistDialog2" timestamp="1577374353354">
+    <state x="459" y="60" key="CommitChangelistDialog2" timestamp="1577374403837">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="344" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1576797916204" />
-    <state x="459" y="60" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577374353354" />
+    <state x="459" y="60" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577374403837" />
     <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1577004107598">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -272,10 +279,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577369043848" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1577104317419">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1577374416101">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577104317419" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577374416101" />
     <state x="529" y="306" key="com.intellij.ide.util.TipDialog" timestamp="1577361635113">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -289,6 +296,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="276" width="540" height="496" key="extract.method.dialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577100741842" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1577374494780">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577374494780" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1577101652808">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

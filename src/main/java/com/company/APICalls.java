@@ -19,8 +19,8 @@ public class APICalls {
         String Host = "maps.googleapis.com";
         String key = "AIzaSyBm1pd5qszZJgbbH-2n_N-eu2ouxBqfPKU";//Type here your key
         // Params
-        String origin = "2755 I-20 Frontage Rd, Grand Prairie, TX 75052";
-        String destination = "8613 Trinity Vista Trl";
+        String origin = "";
+        String destination = "";
         String departure_time = "now";
         String travel_mode = "driving";
         String traffic_model = "pessimistic";
@@ -73,7 +73,7 @@ public class APICalls {
         String charset = "UTF-8";
         // Headers for a request
         String Host = "maps.googleapis.com";
-        String key = "AIzaSyBm1pd5qszZJgbbH-2n_N-eu2ouxBqfPKU";//Type here your key
+        String key = "";//Type here your key
         // Params
         String origin = "2755 I-20 Frontage Rd, Grand Prairie, TX 75052";
         String destination = "8613 Trinity Vista Trl";
