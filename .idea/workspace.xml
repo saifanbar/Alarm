@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f2e07895-3e50-473c-8eb4-cfdf83bdd819" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/notes.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582932198607</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added functioning dynamic alarm clock based on live traffic.">
+      <created>1582940213193</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1582940213193</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -231,11 +239,11 @@
       <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state x="569" y="327" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1440.816@0.23.1440.816" timestamp="1576787906210" />
-    <state x="459" y="60" key="CommitChangelistDialog2" timestamp="1582932211433">
+    <state x="459" y="60" key="CommitChangelistDialog2" timestamp="1582940212790">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="344" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1576797916204" />
-    <state x="459" y="60" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582932211433" />
+    <state x="459" y="60" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582940212790" />
     <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1577004107598">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -280,10 +288,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577369043848" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1582932361617">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1582940222561">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582932361617" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582940222561" />
     <state x="529" y="306" key="com.intellij.ide.util.TipDialog" timestamp="1577361635113">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

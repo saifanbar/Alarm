@@ -27,6 +27,6 @@ User questions:
 From where will you be leaving?
 Where are you going?
 How long does it take you to get ready?
-What timeAIzaSyBm1pd5qszZJgbbH-2n_N-eu2ouxBqfPKUdo you need to arrive?
+What time do you need to arrive?
 
 
